@@ -1,0 +1,12 @@
+// OPEN ARDUINO COPY THE CODE THEN UPLOAD MO SA ARDUINO IDE
+// TAPOS UPLOAD, open two seperated vscode then sa una ng vscode cd backend anay then python app.py
+// sa ikaduwa ng vsc npx expo start
+// use mysql workbench kay naka connect nani sa backend python make sure nga mag add password before e pa run.
+ikaw na bahala sa app logic mo d ko bi gets, i just made you a system 80 percent
+do you best, suggestion? use claude ai best of luck im sleeping goodbye.
+
+// sa backend ara nato ang connection sang arduino and backend(flask) indi kana ma budlayan pagita kay naka labeled sa backend each routes.
+
+// good luch jersey, tang ina mo.
+
+// create venv python -m venv venv after that wait for 10 seconds then close terminal, open liwat then type pip install -r requirements.txt

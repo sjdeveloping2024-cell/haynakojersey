@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick-A-Book Library System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0a2540 0%, #1e3c72 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo { font-size: 80px; margin-bottom: 20px; }
+        h1 { font-size: 48px; margin-bottom: 10px; }
+        p { font-size: 18px; color: rgba(255,255,255,0.8); margin-bottom: 40px; }
+        .btn-group { display: flex; gap: 20px; }
+        .btn {
+            padding: 14px 36px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn-primary { background: white; color: #0a2540; }
+        .btn-primary:hover { background: #e0e8ff; }
+        .btn-outline { border: 2px solid white; color: white; }
+        .btn-outline:hover { background: rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+    <div class="logo">📚</div>
+    <h1>Pick-A-Book</h1>
+    <p>A simple and efficient library management system</p>
+    <div class="btn-group">
+        <a href="{{ url_for('login_page') }}" class="btn btn-primary">Login</a>
+        <a href="{{ url_for('registration_page') }}" class="btn btn-outline">Register</a>
+    </div>
+</body>
+</html>

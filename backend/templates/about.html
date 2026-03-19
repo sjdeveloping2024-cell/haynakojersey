@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Pick-A-Book</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+        .navbar {
+            background: #0a2540; color: white; padding: 15px 30px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-links a {
+            color: white; text-decoration: none; margin-left: 20px;
+            padding: 8px 15px; border-radius: 5px;
+        }
+        .nav-links a:hover { background: #1e3c72; }
+        .logout-btn { background: #dc3545; }
+        .content { padding: 50px; max-width: 700px; margin: auto; }
+        .content h1 { color: #0a2540; margin-bottom: 20px; }
+        .content p { color: #555; line-height: 1.8; margin-bottom: 15px; }
+        .card {
+            background: white; border-radius: 10px; padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>📚 Pick-A-Book Library System</h2>
+        <div class="nav-links">
+            <a href="{{ url_for('dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('books_page') }}">Books</a>
+            <a href="{{ url_for('students_page') }}">Students</a>
+            <a href="{{ url_for('profile_page') }}">Profile</a>
+            <a href="{{ url_for('about_page') }}">About</a>
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h1>📚 About Pick-A-Book</h1>
+            <p>Pick-A-Book is a simple and efficient library management system built to help librarians manage books, students, and borrowing records with ease.</p>
+            <p><strong>Version:</strong> 2.0.0</p>
+            <p><strong>Features:</strong></p>
+            <p>• Book inventory management with add/delete functionality<br>
+               • Student registration and management<br>
+               • Borrow and return tracking with due dates<br>
+               • Dashboard with real-time statistics<br>
+               • Librarian accounts with secure login</p>
+            <p>Built with Flask (Python) and SQLite for the backend, with a clean HTML/CSS frontend.</p>
+        </div>
+    </div>
+</body>
+</html>
